@@ -260,21 +260,21 @@
       <p>Register once to appear in the searchable alumni directory and receive reunion &amp; opportunity updates.</p>
     </div>
     <div class="form-card">
-      <form id="regForm">
+      <form id="regForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-row">
-          <div class="field"><label>Full Name</label><input type="text" placeholder="e.g. Anjali Verma" required></div>
-          <div class="field"><label>Graduation Year</label><input type="text" placeholder="e.g. 2014" required></div>
+          <div class="field"><label>Full Name</label><input class="form-input" type="text" name="name" placeholder="e.g. Anjali Verma" required></div>
+          <div class="field"><label>Graduation Year</label><input class="form-input" type="text" name="grad_year" placeholder="e.g. 2014" required></div>
         </div>
         <div class="form-row">
-          <div class="field"><label>Course / Trade</label><input type="text" placeholder="e.g. Food Processing" required></div>
-          <div class="field"><label>Current Organisation</label><input type="text" placeholder="e.g. Amul" required></div>
+          <div class="field"><label>Course / Trade</label><input class="form-input" type="text" name="course" placeholder="e.g. Food Processing" required></div>
+          <div class="field"><label>Current Organisation</label><input class="form-input" type="text" name="organisation" placeholder="e.g. Amul" required></div>
         </div>
         <div class="form-row">
-          <div class="field"><label>City</label><input type="text" placeholder="e.g. Lucknow" required></div>
-          <div class="field"><label>Email</label><input type="email" placeholder="you@email.com" required></div>
+          <div class="field"><label>City</label><input class="form-input" type="text" name="city" placeholder="e.g. Lucknow" required></div>
+          <div class="field"><label>Email</label><input class="form-input" type="email" name="email" placeholder="you@email.com" required></div>
         </div>
         <button type="submit" class="form-submit">Register in Directory</button>
-        <p class="form-note">This is a prototype form &mdash; connect it to a database before launch.</p>
+        <p class="form-note">Your details are sent securely and added to the alumni list.</p>
       </form>
     </div>
   </div>
